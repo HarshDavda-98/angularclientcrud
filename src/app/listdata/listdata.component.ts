@@ -8,12 +8,13 @@ import { ApiService } from '../shared/api.service';
 })
 export class ListdataComponent implements OnInit {
   getuserData!: any;
-
   constructor(private api: ApiService) {}
 
   ngOnInit(): void {
     this.getAllUserDatas();
   }
+
+  
   getAllUserDatas() {
     this.api.getData().subscribe(
       (res) => {

@@ -2,22 +2,22 @@
 
   <table class="table border">
     <thead class="bg-dark text-light">
-      <tr>
-        <th scope="col">Id</th>
-        <th scope="col">Name</th>
-        <th scope="col">Discription</th>
-        <th scope="col">Email</th>
-        <th scope="col">Mobile</th>
-        <th scope="col">Action </th>
+      <tr class="text-center"  >
+        <th class="border"  scope="col">Id</th>
+        <th class="border" scope="col">Name</th>
+        <th class="border" scope="col">Discription</th>
+        <th class="border" scope="col">Email</th>
+        <th class="border" scope="col">Mobile</th>
+        <th class="border" scope="col">Action </th>
       </tr>
     </thead>
     <tbody>
       <tr *ngFor="let list of getuserData">
-        <td scope="row">{{list.id}}</td>
-        <td>{{list.Name}}</td>
-        <td>{{list.Discription}}</td>
-        <td>{{list.Email}}</td>
-        <td>{{list.Mobile}}</td>
+        <td scope="row" class="pt-4" >{{list.id}}</td>
+        <td  class="pt-4 border " >{{list.Name}}</td>
+        <td class="pt-4 border " >{{list.Discription}}</td>
+        <td class="pt-4 border " >{{list.Email}}</td>
+        <td class="pt-4 border " >{{list.Mobile}}</td>
         <td class="text-center"><button class="btn btn-success m-2 ">Edits</button>
          <button class="btn btn-danger m-2">Delete</button>
         </td>
