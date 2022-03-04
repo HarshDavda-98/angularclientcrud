@@ -1,0 +1,27 @@
+<div class="container mt-3 ">
+
+  <table class="table border">
+    <thead class="bg-dark text-light">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Discription</th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Action </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let list of getuserData">
+        <td scope="row">{{list.id}}</td>
+        <td>{{list.Name}}</td>
+        <td>{{list.Discription}}</td>
+        <td>{{list.Email}}</td>
+        <td>{{list.Mobile}}</td>
+        <td class="text-center"><button class="btn btn-success m-2 ">Edits</button>
+         <button class="btn btn-danger m-2">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
