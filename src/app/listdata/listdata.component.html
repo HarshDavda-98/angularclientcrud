@@ -18,8 +18,8 @@
         <td class="pt-4 border " >{{list.Discription}}</td>
         <td class="pt-4 border " >{{list.Email}}</td>
         <td class="pt-4 border " >{{list.Mobile}}</td>
-        <td class="text-center"><button class="btn btn-success m-2 ">Edits</button>
-         <button class="btn btn-danger m-2">Delete</button>
+        <td class="text-center"><button (click)="EditData(list)" class="btn btn-success m-2 ">Edits</button>
+         <button (click)="Deletethedata(list)" class="btn btn-danger m-2">Delete</button>
         </td>
       </tr>
     </tbody>

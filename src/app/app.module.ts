@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { ListdataComponent } from './listdata/listdata.component';
 import {HttpClientModule} from '@angular/common/http';
-import { CrudappComponent } from './crudapp/crudapp.component'
+import { CrudappComponent } from './crudapp/crudapp.component';
+import { LoginComponent } from './login/login.component'
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
     ListdataComponent,
     CrudappComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,

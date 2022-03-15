@@ -1,7 +1,8 @@
 export class FormMOdels {
-  id: number = new Date().getTime();
+  _id:string = '';
+  id: string = `${new Date().getTime()}`;
   Name: string = '';
-  Mobile: string = '';
+  Mobile: Number = 91;
   Email: string = '';
   Discription: string = '';
 }
